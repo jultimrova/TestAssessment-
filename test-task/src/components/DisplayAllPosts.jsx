@@ -1,7 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, {useState, useRef, useEffect} from "react";
 import CreateNewPost from "./CreateNewPost";
 import Post from "./Post";
 import ModifyPost from "./ModifyPost"
+
+const BASE_URL = 'https://simple-blog-api.crew.red';
+
 const DisplayAllPosts = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
@@ -9,6 +12,7 @@ const DisplayAllPosts = () => {
     const [isCreateNewPost, setIsCreateNewPost] = useState(false);
     const [isModifyPost, setIsModifyPost] = useState(false);
     const [editPostId, setEditPostId] = useState("");
+
 
     // Initialize useRef
     const getTitle = useRef();
