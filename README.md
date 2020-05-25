@@ -1,5 +1,7 @@
 # Blog with React Hooks
 
+This project was bootstrapped with Create React App.
+
 In the project directory run:
 
 npm start
