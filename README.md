@@ -4,6 +4,10 @@ This project was bootstrapped with Create React App.
 
 In the project directory run:
 
+
+npm install
+
+
 npm start
 
 
